@@ -15,7 +15,6 @@ c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\BackEnd.Test
 c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\BackEnd.Tests\bin\Debug\BackEnd.Tests.dll
 c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\BackEnd.Tests\bin\Debug\BackEnd.Tests.pdb
 c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\BackEnd.Tests\bin\Debug\BackEnd.dll
-c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\BackEnd.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\BackEnd.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
 c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\BackEnd.Tests\bin\Debug\Newtonsoft.Json.dll
 c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\BackEnd.Tests\bin\Debug\System.Net.Http.Formatting.dll

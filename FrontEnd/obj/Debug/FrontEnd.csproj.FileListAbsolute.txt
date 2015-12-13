@@ -51,3 +51,4 @@ c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\FrontEnd\bin
 c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\FrontEnd\bin\BackEnd.Tests.pdb
 c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\FrontEnd\bin\BackEnd.pdb
 c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\FrontEnd\obj\Debug\FrontEnd.csprojResolveAssemblyReference.cache
+C:\Users\Alexis\Documents\Visual Studio 2015\Projects\Challenge-XML\FrontEnd\bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll

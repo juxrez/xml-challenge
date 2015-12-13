@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BoardGames>
+  <Game>
+    <ID>1</ID>
+    <Name>Chest</Name>
+    <Description>Move your peons</Description>
+    <MaxPlayers>2</MaxPlayers>
+  </Game>
+</BoardGames>
