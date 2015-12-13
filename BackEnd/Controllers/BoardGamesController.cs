@@ -1,58 +1,55 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Web.Http;
-//using System.Web.Http.cors;
 using BackEnd.Infrastructure;
 using BackEnd.Models;
-
 namespace BackEnd.Controllers
 {
-    //[EnableCors(origins: "*", headers: "*", methods: "*")]
-    public class ApiGamesController : ApiController
+    public class BoardGamesController : ApiController
     {
         private IRepository<BoardGame> repo;
 
-        public ApiGamesController()
+        public BoardGamesController()
         {
             repo = new Repository();
         }
 
-        public ApiGamesController(Repository repository)
+        public BoardGamesController(Repository repository)
         {
             repo = repository;
         }
-
-        // GET: api/Games
+        // GET: api/BoardGames
         public IEnumerable<BoardGame> Get()
         {
             return repo.List;
         }
 
-        // GET: api/Games/5
+        // GET: api/BoardGames/5
         public BoardGame Get(int id)
         {
             BoardGame game = repo.FindById(id);
             return game;
         }
 
-        // POST: api/Games
+        // POST: api/BoardGames
         public void Post(BoardGame game)
         {
             repo.Add(game);
-            //return new { Success = true };
         }
 
-        // PUT: api/Games/5
-        public void Put(int Id, BoardGame game)
+        // PUT: api/BoardGames/5
+        public void Put(BoardGame game)//public void Put(int id, BoardGame game)
         {
-            repo.Update(Id, game);
+            repo.Update(game.Id, game);
         }
 
-        // DELETE: api/Games/5
+        // DELETE: api/BoardGames/5
         public void Delete(int id)
         {
             repo.Delete(id);
         }
-
-
     }
 }

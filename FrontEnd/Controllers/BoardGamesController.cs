@@ -20,7 +20,7 @@ namespace FrontEnd.Controllers
                 get.BaseAddress = new Uri("http://localhost:58187/");
                 get.DefaultRequestHeaders.Accept.Clear();
                 get.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage response = await get.GetAsync("api/Games");
+                HttpResponseMessage response = await get.GetAsync("api/BoardGames");
                 if (response.IsSuccessStatusCode)
                 {
                     try {
