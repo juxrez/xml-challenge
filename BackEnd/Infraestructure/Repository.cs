@@ -22,7 +22,7 @@ namespace BackEnd.Infrastructure
 
 		public Repository()
 		{
-			repoPath = HttpContext.Current.Server.MapPath("~/App_Data/Games.xml");
+			repoPath = HttpContext.Current.Server.MapPath("~/App_Data/BoardGames.xml");
 			allGames = new List<BoardGame>();
 			xmlRepo = XDocument.Load(repoPath);
             UpdateGamesList();

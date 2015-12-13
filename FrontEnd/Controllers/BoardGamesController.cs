@@ -45,7 +45,7 @@ namespace FrontEnd.Controllers
                 get.BaseAddress = new Uri("http://localhost:58187/");
                 get.DefaultRequestHeaders.Accept.Clear();
                 get.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage response = await get.GetAsync("api/Games/" + id);
+                HttpResponseMessage response = await get.GetAsync("api/BoardGames/" + id);
                 if (response.IsSuccessStatusCode)
                 {
                     try
@@ -89,7 +89,7 @@ namespace FrontEnd.Controllers
                         Description = postBoardGame.Description,
                         MaxPlayers = postBoardGame.MaxPlayers
                     };
-                    HttpResponseMessage response = await post.PostAsJsonAsync("api/Games", _bg);
+                    HttpResponseMessage response = await post.PostAsJsonAsync("api/BoardGames", _bg);
                     if(response.IsSuccessStatusCode)
                     {
                         return RedirectToAction("Index");
@@ -112,7 +112,7 @@ namespace FrontEnd.Controllers
                 edit.BaseAddress = new Uri("http://localhost:58187/");
                 edit.DefaultRequestHeaders.Accept.Clear();
                 edit.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage response = await edit.GetAsync("api/Games/" + id);
+                HttpResponseMessage response = await edit.GetAsync("api/BoardGames/" + id);
                 if(response.IsSuccessStatusCode)
                 {
                     try
@@ -138,7 +138,7 @@ namespace FrontEnd.Controllers
                 edit.BaseAddress = new Uri("http://localhost:58187/");
                 edit.DefaultRequestHeaders.Clear();
                 edit.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage response = await edit.PutAsJsonAsync("api/Games/" + id, postBoardGame);
+                HttpResponseMessage response = await edit.PutAsJsonAsync("api/BoardGames/" + id, postBoardGame);
                 if(response.IsSuccessStatusCode)
                 {
                     return RedirectToAction("Index");
@@ -155,7 +155,7 @@ namespace FrontEnd.Controllers
                 get.BaseAddress = new Uri("http://localhost:58187/");
                 get.DefaultRequestHeaders.Accept.Clear();
                 get.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage response = await get.GetAsync("api/Games/" + id);
+                HttpResponseMessage response = await get.GetAsync("api/BoardGames/" + id);
                 if (response.IsSuccessStatusCode)
                 {
                     try
@@ -188,7 +188,7 @@ namespace FrontEnd.Controllers
                 try
                 {
                     // TODO: Add insert logic here
-                    HttpResponseMessage response = await delete.DeleteAsync("api/Games/" + postBoardGame.Id);          
+                    HttpResponseMessage response = await delete.DeleteAsync("api/BoardGames/" + postBoardGame.Id);          
                     if (response.IsSuccessStatusCode)
                     {
                         return RedirectToAction("Index");

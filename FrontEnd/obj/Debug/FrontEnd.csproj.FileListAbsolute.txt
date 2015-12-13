@@ -48,7 +48,6 @@ c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\FrontEnd\bin
 c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\FrontEnd\bin\System.Web.Http.Cors.xml
 c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\FrontEnd\bin\BackEnd.dll
 c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\FrontEnd\bin\BackEnd.Tests.dll
-c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\FrontEnd\bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\FrontEnd\bin\BackEnd.Tests.pdb
 c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\FrontEnd\bin\BackEnd.pdb
 c:\users\alexis\documents\visual studio 2015\Projects\Challenge-XML\FrontEnd\obj\Debug\FrontEnd.csprojResolveAssemblyReference.cache
