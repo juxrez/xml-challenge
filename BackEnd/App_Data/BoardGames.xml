@@ -1,9 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <BoardGames>
   <Game>
     <ID>1</ID>
     <Name>Chest</Name>
     <Description>Move your peons</Description>
-    <MaxPlayers>4</MaxPlayers>
+    <MaxPlayers>2</MaxPlayers>
+  </Game>
+  <Game>
+    <ID>2</ID>
+    <Name>League of legends</Name>
+    <Description>Not a boardgame but still cool</Description>
+    <MaxPlayers>10</MaxPlayers>
+  </Game>
+  <Game>
+    <ID>3</ID>
+    <Name>Uno</Name>
+    <Description>put down all your cards before a partner give you more.</Description>
+    <MaxPlayers>5</MaxPlayers>
   </Game>
 </BoardGames>

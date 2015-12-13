@@ -36,7 +36,29 @@ namespace FrontEnd.Controllers
             }
                 return View();
         }
-
+        public async Task<ActionResult> About()
+        {
+            using (var get = new HttpClient())
+            {
+                get.BaseAddress = new Uri("http://localhost:58187/");
+                get.DefaultRequestHeaders.Accept.Clear();
+                get.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                HttpResponseMessage response =  await get.GetAsync("api/BoardGames");
+                try
+                {
+                    IEnumerable<BoardGame> games = await response.Content.ReadAsAsync<IEnumerable<BoardGame>>();
+                    ViewBag.NumOfGames = games.Count();
+                    return View();
+                }
+                catch
+                {
+                    return View("Error");
+                }
+                
+            }
+                ViewBag.Message = "Your application description page.";
+            return View();
+        }
         // GET: BoardGames/Details/5
         public async Task<ActionResult> Details(int id)
         {

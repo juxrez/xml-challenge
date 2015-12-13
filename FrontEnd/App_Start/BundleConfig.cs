@@ -24,7 +24,7 @@ namespace FrontEnd
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/boostrap-theme.css",
                       "~/Content/site.css"));
         }
     }

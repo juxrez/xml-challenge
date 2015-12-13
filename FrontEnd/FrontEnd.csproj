@@ -154,7 +154,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\boostrap-theme.css" />
     <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.css" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -187,6 +189,7 @@
     <Content Include="Views\BoardGames\Create.cshtml" />
     <Content Include="Views\BoardGames\Edit.cshtml" />
     <Content Include="Views\BoardGames\Delete.cshtml" />
+    <Content Include="Views\BoardGames\About.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
